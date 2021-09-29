@@ -2,16 +2,84 @@
 <html>
     <head>
         <title>Ezra's Website</title>
+        <style>
+            body {
+                background: rgb(247, 43, 43);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(36, 151, 7);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav h1 {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 0, 0);
+                flex: 1;
+                margin: 0;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #09b9ff
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(212, 207, 190);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+        
     </head>
         <body>
             <div id="all-contents">
                 <nav>
-
+                    <h1>Ezra's Website</h1>
+                    <ui>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Portfolio</a>
+                        </li>
+                    </ui>
                 </nav>
+                    
 
                 <main>
                     <div class="sidebar">
-
+                        <img src="https://images.firstpost.com/wp-content/uploads/2020/04/meme02-3805.jpg?impolicy=website&=">
                     </div>
 
                     <div class="content">
@@ -19,7 +87,12 @@
                         <p>Student at Fountainbleu highschool</p>
                         <div class="interests">
                             <h3>Interests</h3>
-                            <ul></ul>
+                            <ul>                           
+                                 <li>sleep</li>
+                                <li>games</li>
+                                <li>tv</li>
+                            
+                            </ul>
                         </div>
                     </div>
                 </main>
