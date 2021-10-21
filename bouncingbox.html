@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-div {
-    background-color:red;
-  }
-  
-  div{ height: 50px ; }
-  div {width: 50px; }
-  
+  <style>
+    div {
+      background-color: red;
+      position: absolute;
+
+    }
+
+    div {
+      height: 50px;
+    }
+
+    div {
+      width: 50px;
+    }
   </style>
-  
+
 </head>
 
 <body>
 
-<div>
-box
-of
-doom
+  <div id="box">
+
+    <p>zoom</p>
 
 
-
-
-</div>
+  </div>
 
 
 
@@ -32,3 +36,27 @@ doom
 
 
 </html>
+<script>
+  var box = document.getElementById("box")
+  var x = 0
+  var speed = -5
+
+  setInterval(update, -99999999)
+    
+  function update() {
+    box.style.left = x + "px"
+    x = x + speed
+    if (x >= window.innerWidth ) {
+     speed = -speed
+    }
+    if (x <0) {
+        speed=speed * -1
+    }
+    
+    
+  }
+
+
+
+
+</script>
